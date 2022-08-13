@@ -1,101 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>You Are Awesome!</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
-    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/c5ab2c9683.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <title>Music</title>
   </head>
   <body>
-    <header class="status-bar">
-      <div class="status-bar__column"><i class="fa-solid fa-bars"></i></div>
-      <div class="status-bar__column"><h2>Library</h2></div>
-      <div class="status-bar__column">
-        <i class="fa-solid fa-basket-shopping"></i>
-      </div>
-    </header>
-    <form class="search">
-      <input class="search__input" type="text" placeholder="Search books..." />
-      <i class="search__icon fa-solid fa-magnifying-glass"></i>
-    </form>
-    <main>
-      <div class="Book">
-        <h2 class="Book__title">Book of the day</h2>
-        <div class="Book__info">
-          <img
-            class="Book__info__img"
-            src="img/book.jpg"
-            width="150px"
-            height="200px"
-          />
-          <div class="Book__info--box">
-            <div class="Book__info__text">
-              <h3>No Fixed Abode</h3>
-              <span>Journey Through</span>
-              <span>★4/5</span>
-            </div>
-            <div class="Book__info__btn">
-              <form class="Book__info__btn--box">
-                <div><button class="squre">Journey</button></div>
-                <div><button class="squre">Biography</button></div>
-              </form>
-              <form class="Book__info__btn--box">
-                <div>
-                  <button class="bookMark">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </div>
-                <div><button class="BN">Book Now</button></div>
-              </form>
-            </div>
-          </div>
+    <div class="music-box">
+      <div class="status-bar">
+        <div class="status-bar__icon">
+          <i class="fa-solid fa-arrow-left fa-xs"></i>
+        </div>
+        <div class="status-bar__icon">
+          <i class="fa-solid fa-magnifying-glass fa-xs"></i>
         </div>
       </div>
-      <div class="List">
-        <h2 class="List__title">Top Adventures</h2>
-        <div class="List__book">
-          <ul class="List__book--list">
-            <li class="List__book--book">
-              <img src="img/book.jpg" width="100px" height="150px" />
-            </li>
-            <li class="List__book--book">
-              <img src="img/book.jpg" width="100px" height="150px" />
-            </li>
-            <li class="List__book--book">
-              <img src="img/book.jpg" width="100px" height="150px" />
-            </li>
-            <li class="List__book--book">
-              <img src="img/book.jpg" width="100px" height="150px" />
-            </li>
-            <li class="List__book--book">
-              <img src="img/book.jpg" width="100px" height="150px" />
+      <main>
+        <div class="component-music">
+          <img
+            src="https://w.namu.la/s/ba517e3782e050aad74666e17887b27d47c030fb1d9aaab989fec9e7d205c6068279551355b8ec36436f2598b6f6417dcfcdd2d7dafd50856aaccb86b7f31c40128e7c324ff132c703a833e5262c498fc4e1a8384462b16f3f7b6add6d121e01c1e219f292adfdec690feecf8c30c8dd"
+            class="component-music__img basic"
+          />
+          <div class="component-music__text">
+            <h3 class="component-music__title">I-DLE, Tomboy</h3>
+            <span class="component-music__info">Rap, Hip-Hop</span>
+          </div>
+        </div>
+
+        <div class="component-btn">
+          <button class="component-btn__shuffle">Shuffle</button>
+          <button class="componet-btn__icon">
+            <i class="fa-solid fa-heart"></i> 99999+
+          </button>
+        </div>
+
+        <div class="music-list">
+          <ul>
+            <li>
+              <div class="component-list">
+                <img
+                  src="https://w.namu.la/s/ba517e3782e050aad74666e17887b27d47c030fb1d9aaab989fec9e7d205c6068279551355b8ec36436f2598b6f6417dcfcdd2d7dafd50856aaccb86b7f31c40128e7c324ff132c703a833e5262c498fc4e1a8384462b16f3f7b6add6d121e01c1e219f292adfdec690feecf8c30c8dd"
+                  class="component-list__img"
+                />
+                <div class="component-list__text">
+                  <span class="component-list__info">Rap, Hip-Hop</span>
+                  <span class="component-list__title">I-DLE, Tomboy</span>
+                </div>
+                <div class="component-list__icon">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+              <div class="component-list select">
+                <div class="select_box">
+                  <img
+                    src="https://i.ytimg.com/vi/zFZE2d0MOYE/maxresdefault.jpg"
+                    class="component-list__img"
+                  />
+                  <i class="select_icon fa-solid fa-music"></i>
+                </div>
+                <div class="component-list__text">
+                  <span class="component-list__info">Rap, Hip-Hop</span>
+                  <span class="component-list__title">I-DLE, My Bag</span>
+                </div>
+                <div class="component-list__icon">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+              <div class="component-list">
+                <img
+                  src="https://i.ytimg.com/vi/Cioee4cyFEw/maxresdefault.jpg"
+                  class="component-list__img"
+                />
+                <div class="component-list__text">
+                  <span class="component-list__info">Rap, Hip-Hop</span>
+                  <span class="component-list__title">I-DLE, ESCAPE</span>
+                </div>
+                <div class="component-list__icon">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+              <div class="component-list">
+                <img
+                  src="https://i.ytimg.com/vi/-rTHTKf-m98/maxresdefault.jpg"
+                  class="component-list__img"
+                />
+                <div class="component-list__text">
+                  <span class="component-list__info">Rap, Hip-Hop</span>
+                  <span class="component-list__title">I-DLE, LATATA</span>
+                </div>
+                <div class="component-list__icon">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+              <div class="component-list">
+                <img
+                  src="https://i.ytimg.com/vi/RefjsFpfH6s/maxresdefault.jpg"
+                  class="component-list__img"
+                />
+                <div class="component-list__text">
+                  <span class="component-list__info">Rap, Hip-Hop</span>
+                  <span class="component-list__title">I-DLE, ALREADY</span>
+                </div>
+                <div class="component-list__icon">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
-      </div>
-      <div class="author">
-        <h2 class="author__title">Popular authors</h2>
-        <div class="author__info">
-          <img src="img/person.jpg" width="120px" height="150px" />
-          <div class="author__info__text">
-            <h3 class="author__info__text--title">
-              George Raymond<br />
-              Richard Martin
-            </h3>
-            <p class="author__info__text--p">
-              Modern Amerrican science fiction writer ....
-            </p>
+
+        <div class="play-now">
+          <div class="play-now__text">
+            <span class="play-now__text--singer">I-DLE,IDOL</span>
+            <span class="play-now__text--title">My Bag</span>
+          </div>
+          <div class="play-now__icons">
+            <i class="fa-solid fa-backward-step fa-2xs"></i>
+            <i class="fa-solid fa-pause"></i>
+            <i class="fa-solid fa-forward-step fa-2xs"></i>
           </div>
         </div>
+      </main>
+    </div>
+
+    <div class="music-box">
+      <div class="status-bar">
+        <div class="status-bar__icon">
+          <i class="fa-solid fa-arrow-left fa-xs"></i>
+        </div>
+        <div class="status-bar__icon">
+          <i class="fa-solid fa-ellipsis-vertical fa-xs"></i>
+        </div>
       </div>
-    </main>
+
+      <main class="play-music">
+        <div class="component-music">
+          <img
+            src="https://i.ytimg.com/vi/zFZE2d0MOYE/maxresdefault.jpg"
+            class="component-music__img play-img"
+          />
+          <div class="component-music__text">
+            <h3 class="component-music__title">My Bag</h3>
+            <span class="component-music__info">I-DLE</span>
+          </div>
+        </div>
+
+        <div class="component-time">
+          <div>
+            <span>1:24</span>
+          </div>
+          <div>
+            <span>2:40</span>
+          </div>
+        </div>
+
+        <form class="component-time__range"><input type="range" /></form>
+
+        <div class="component-play">
+          <i class="fa-solid fa-repeat fa-xs"></i>
+          <i class="fa-solid fa-backward-step fa-lg"></i>
+          <i class="fa-solid fa-circle-play fa-3x"></i>
+          <i class="fa-solid fa-forward-step fa-lg"></i>
+          <i class="fa-solid fa-shuffle fa-xs"></i>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

@@ -1,0 +1,11 @@
+.component-play {
+  height: 120px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.component-play i:first-child,
+.component-play i:last-child {
+  color: rgba(0, 0, 0, 0.5);
+}

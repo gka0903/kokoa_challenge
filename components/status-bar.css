@@ -1,20 +1,5 @@
 .status-bar {
-  background-color: yellow;
-  width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  padding: 30px 10px 50px 10px;
-}
-.status-bar__column {
-  font-size: 20px;
-  width: 33%;
-}
-.status-bar__column:nth-child(2) {
-  display: flex;
-  justify-content: center;
-}
-.status-bar__column:last-child {
-  display: flex;
-  justify-content: end;
 }
